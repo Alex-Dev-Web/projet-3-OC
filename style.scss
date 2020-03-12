@@ -1,0 +1,272 @@
+@import "variable.scss";
+@import "mixins.scss";
+@import "animation.scss";
+@import "google-fonts.css";
+
+body {
+  height: 100%;
+  margin: 0;
+}
+header {
+  width: 100%;
+  background: $background-color_hfn;
+  height: auto;
+  padding-bottom: 1px;
+  padding-top: 1px;
+}
+h1 {
+  text-align: center;
+  font-family: sans-serif;
+  font-size: 60px;
+  color: $font-color_hfn;
+}
+.body_menus h2 {
+  text-align: center;  
+  font-family: sans-serif;
+  padding-top: 50px;
+  font-size: 40px;
+  margin-bottom: 15px;
+}
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 45px;
+  background-color: $background-color_hfn;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+.mentions_contact a {
+  font-family: sans-serif;
+  font-size: 25px;
+  color: $font-color_hfn;
+  text-decoration: none;
+  margin-right: 30px;
+  margin-left: 30px;
+  transition: transform 2s;
+  display: inline-block;
+}
+
+#contact a:hover,
+#mentions a:hover {
+  @include animation_shake;
+}
+
+#next {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  margin-bottom: 60px;
+  margin-top: 60px;
+
+  button {
+    background-color: $background-color_hfn;
+    border: none;
+    color: $font-color_hfn;
+    text-align: center;
+    text-decoration: none;
+    font-size: 30px;
+    margin-bottom: 60px;
+    border-radius: 12px;
+    padding: 25px 90px;
+
+    .points {
+      font-size: 10px;
+      padding-left: 5px;
+      color: $font-color_hfn;
+      opacity: 1;
+    }
+  }
+}
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+#menu1 {
+  background-color: $background-color_menu_1;
+  @include menu_size_and_shadow;
+}
+#menu2 {
+  background-color: $background-color_menu_2;
+  @include menu_size_and_shadow;
+}
+#menu3 {
+  background-color: $background-color_menu_3;
+  @include menu_size_and_shadow;
+}
+#menu4 {
+  background-color: $background-color_menu_4;
+  @include menu_size_and_shadow;
+}
+
+.fa-itunes-note {
+  font-size: 50px;
+  color: $font-color_menu_1;
+}
+#note1,
+#note2,
+#note3 {
+  background: $gradient-note_menu_1;
+  @include background_kit;
+}
+#note2 {
+  font-size: 120px;
+}
+#note3 {
+  font-size: 40px;
+  padding-top: 35px;
+  padding-right: 15px;
+}
+#title_end {
+  display: flex;
+  margin: 0 auto;
+  justify-content: center;
+}
+#title_end_menu1 {
+  font-family: "Devonshire", cursive;
+  font-weight: 100;
+  font-size: 35px;
+  color: $font-color_menu_1;
+}
+#title1_menu1 {
+  font-family: "Devonshire", cursive;
+  color: $font-color_menu_1;
+  font-size: 35px;
+}
+#title2_menu1 {
+  font-family: "Kalam", cursive;
+  color: $font-color_menu_1;
+  font-size: 40px;
+}
+#title1_menu2 {
+  font-family: "Croissant One", cursive;
+  background: $gradient_menu_2;
+  @include background_kit;
+  font-size: 20px;
+}
+#title2_menu2 {
+  font-family: "Croissant One", cursive;
+  font-size: 40px;
+  color: $font-color_title2_menu2;
+}
+#title1_menu3 {
+  font-family: "Dancing Script", cursive;
+  font-size: 30px;
+  background: $gradient_menu_3;
+  @include background_kit;
+}
+#title2_menu3 {
+  font-family: "Kalam", cursive;
+  color: $font-color_title2_menu3;
+  font-size: 40px;
+}
+#title1_menu4 {
+  font-family: "Kaushan Script", cursive;
+  font-size: 30px;
+  background: $gradient_menu_4;
+  @include background_kit;
+}
+#title2_menu4 {
+  color: $font-color_title2_menu4;
+  font-family: "Kalam", cursive;
+  font-size: 40px;
+}
+.menu {
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  width: 450px;
+  height: 650px;
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+}
+.title_first_page {
+  justify-content: center;
+  align-items: center;
+}
+
+.body_menus {
+  display: contents;
+  .page_menu {
+    text-align: center;
+    width: 700px;
+    margin: 0 auto;
+    padding-bottom: 35px;
+    padding-top: 35px;
+    margin-bottom: 100px;
+  }
+}
+
+#menu_1 {
+  background-color: $background-color_menu_1;
+}
+
+#menu_1,
+#menu_2,
+#menu_3 {
+  @include h4_border_colors;
+}
+
+#menu_4 {
+  @include h4_border_gradient;
+}
+
+.content_menu_content {
+  display: flex;
+  flex-direction: column;
+  margin-left: 70px;
+  margin-right: 70px;
+  .plats_prix{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+#title_menu1 {
+  font-family: "Devonshire", cursive;
+  font-weight: 100;
+  font-size: 65px;
+  color: $font-color_menu_1;
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
+#title_menu2 {
+  font-size: 50px;
+  background: $gradient_menu_2;
+  @include background_kit;
+}
+#title_menu3 {
+  font-family: "Dancing Script", cursive;
+  font-size: 60px;
+  background: $gradient_menu_3;
+  @include background_kit;
+}
+#title_menu4 {
+  font-family: "Kaushan Script", cursive;
+  font-size: 65px;
+  background: $gradient_menu_4;
+  @include background_kit;
+}
+#menu_2 .content_menu_content {
+  font-family: "Roboto Slab", serif;
+}
+#menu_2 .nom_menu {
+  font-size: 20px;
+}
+#menu_1,
+#menu_3,
+#menu_4 {
+  .menu_content {
+    font-family: "Shadow into light", cursive;
+  }
+}
+
+@import "responsive.scss";

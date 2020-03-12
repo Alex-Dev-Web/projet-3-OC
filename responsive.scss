@@ -1,0 +1,42 @@
+@media only screen and (max-width: 1024px) {
+  #corp_de_page {
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+  }
+  #la_note_enchantee,
+  #le_chic_a_la_française,
+  #le_delice_des_papilles,
+  #la_palette_du_gout {
+    width: fit-content;
+    margin: 0;
+  }
+  html .body_menus {
+    width: fit-content;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .body_menus .page_menu{
+    width: auto;
+  }
+  .plats_prix{
+    align-items: center;
+    padding: 10px 0;
+  }
+  .prix{
+    padding-left: 10px;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  .mentions_contact {
+    font-size: 25px;
+  }
+  html .body_menus {
+    display: block;
+  }
+  #menu_2 .nom_menu {
+    font-size: 19px;
+}
+}

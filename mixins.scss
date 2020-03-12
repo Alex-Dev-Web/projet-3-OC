@@ -1,0 +1,129 @@
+@mixin border_title {
+  content: "";
+  width: 100%;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+@mixin background_kit {
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+@mixin position_h4 {
+  padding: 1em 0;
+  text-align: center;
+  overflow: hidden;
+  margin-left: 45px;
+  margin-right: 45px;
+}
+
+@mixin animation_shake {
+  -webkit-animation-name: shake;
+  animation-name: shake;
+  -webkit-animation-duration: 0.8s;
+  animation-duration: 0.8s;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+}
+
+@mixin menu_size_and_shadow {
+  display: flex;
+  width: 450px;
+  height: 650px;
+  margin: 50px;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 1px 1px 12px #555;
+}
+
+@mixin h4_border_colors {
+  h4 {
+    @include position_h4;
+  }
+  h4:before,
+  h4:after {
+    @include border_title;
+  }
+
+  #color_prelude:before,
+  #color_prelude:after,
+  #color_orgue:before,
+  #color_orgue:after,
+  #color_final:before,
+  #color_final:after {
+    @include border_title;
+    border-bottom: $font-color_menu_1 solid;
+  }
+  #color_appetit:before,
+  #color_appetit:after {
+    @include border_title;
+    border-bottom: $font-color_title2_menu2 solid;
+  }
+  #color_plaisir:before,
+  #color_plaisir:after {
+    @include border_title;
+    border-bottom: $font-color_main-dish_menu2 solid;
+  }
+  #color_gourmandise:before,
+  #color_gourmandise:after {
+    @include border_title;
+    border-bottom: $font-color_dessert_menu2 solid;
+  }
+
+  #color_commencer:before,
+  #color_commencer:after {
+    @include border_title;
+    border-bottom: $font-color_entree_menu3 solid;
+  }
+  #color_continuer:before,
+  #color_continuer:after {
+    @include border_title;
+    border-bottom: $font-color_main-dish_menu3 solid;
+  }
+  #color_terminer:before,
+  #color_terminer:after {
+    @include border_title;
+    border-bottom: $font-color_dessert_menu3 solid;
+  }
+
+  h4:before {
+    margin-left: -100%;
+    margin-right: 10px;
+  }
+  h4:after {
+    margin-right: -100%;
+    margin-left: 10px;
+  }
+}
+
+@mixin h4_border_gradient {
+  h4 {
+    @include position_h4;
+  }
+  h4::before,
+  h4::after {
+    @include border_title;
+    height: 5px;
+    background-image: -webkit-linear-gradient(155deg, #beff7f, #3e923a, #3e923a, #beff7f);
+  }
+
+  h4::before {
+    margin-left: -100%;
+    margin-right: 40px;
+  }
+  h4::after {
+    margin-right: -100%;
+    margin-left: 40px;
+  }
+}
+
+@mixin flat_animation {
+  content: "";
+  display: block;
+  height: 0.06em;
+  width: 0%;
+  margin-bottom: -21px;
+  transition: width 0.5s;
+}

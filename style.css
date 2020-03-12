@@ -1,0 +1,769 @@
+@charset "UTF-8";
+/*background-color header, footer, bouton next*/
+/*couleur police header, footer, bouton next*/
+/*couleur background du menu enchantée*/
+/*couleur background menu chic à la française*/
+/*couleur background menu le delices des papilles*/
+/*couleur background menu la palette du gout*/
+/*couleur de police et notes menu enchantée*/
+/*couleur graduée des notes du menu enchantée*/
+/* couleur police du titre "menu" du menu chic à la française et du titre de l'entrée*/
+/* couleur police plat principal menu chic à la française*/
+/* couleur police plat dessert menu chic à la française*/
+/* couleur police du titre "menu" du menu le délice des papilles*/
+/* couleur police du plat entrée*/
+/* couleur police plat principal*/
+/* couleur police dessert */
+/* couleur police du titre "menu" du menu la palette du goût*/
+/* une des couleur du dégradé et du soulignement du menu la palette du goût*/
+/*background-color header, footer, bouton next*/
+/*couleur police header, footer, bouton next*/
+/*couleur background du menu enchantée*/
+/*couleur background menu chic à la française*/
+/*couleur background menu le delices des papilles*/
+/*couleur background menu la palette du gout*/
+/*couleur de police et notes menu enchantée*/
+/*couleur graduée des notes du menu enchantée*/
+/* couleur police du titre "menu" du menu chic à la française et du titre de l'entrée*/
+/* couleur police plat principal menu chic à la française*/
+/* couleur police plat dessert menu chic à la française*/
+/* couleur police du titre "menu" du menu le délice des papilles*/
+/* couleur police du plat entrée*/
+/* couleur police plat principal*/
+/* couleur police dessert */
+/* couleur police du titre "menu" du menu la palette du goût*/
+/* une des couleur du dégradé et du soulignement du menu la palette du goût*/
+@import url(google-fonts.css);
+@keyframes shake {
+  0% {
+    -webkit-transform: translate(2px, 2px); }
+  10% {
+    -webkit-transform: translate(-2px, -2px); }
+  20% {
+    -webkit-transform: translate(2px, 2px); }
+  30% {
+    -webkit-transform: translate(-2px, -2px); }
+  40% {
+    -webkit-transform: translate(2px, 2px); }
+  50% {
+    -webkit-transform: translate(-2px, -2px); }
+  60% {
+    -webkit-transform: translate(2px, 2px); }
+  70% {
+    -webkit-transform: translate(-2px, -2px); }
+  80% {
+    -webkit-transform: translate(2px, 2px); }
+  90% {
+    -webkit-transform: translate(-2px, -2px); }
+  100% {
+    -webkit-transform: translate(2px, 2px); } }
+
+@-webkit-keyframes clignote1 {
+  0% {
+    opacity: 0.3; }
+  10% {
+    opacity: 0.3; }
+  20% {
+    opacity: 0.7; }
+  30% {
+    opacity: 1; }
+  40% {
+    opacity: 0.3; }
+  100% {
+    opacity: 0.3; } }
+
+@keyframes clignote1 {
+  0% {
+    opacity: 0.3; }
+  10% {
+    opacity: 0.3; }
+  20% {
+    opacity: 0.7; }
+  30% {
+    opacity: 1; }
+  40% {
+    opacity: 0.3; }
+  100% {
+    opacity: 0.3; } }
+
+@-webkit-keyframes clignote2 {
+  0% {
+    opacity: 0.3; }
+  40% {
+    opacity: 0.3; }
+  50% {
+    opacity: 0.7; }
+  60% {
+    opacity: 1; }
+  70% {
+    opacity: 0.3; }
+  100% {
+    opacity: 0.3; } }
+
+@keyframes clignote2 {
+  0% {
+    opacity: 0.3; }
+  40% {
+    opacity: 0.3; }
+  50% {
+    opacity: 0.7; }
+  60% {
+    opacity: 1; }
+  70% {
+    opacity: 0.3; }
+  100% {
+    opacity: 0.3; } }
+
+@-webkit-keyframes clignote3 {
+  0% {
+    opacity: 0.3; }
+  70% {
+    opacity: 0.3; }
+  80% {
+    opacity: 0.7; }
+  90% {
+    opacity: 1; }
+  100% {
+    opacity: 0.3; } }
+
+@keyframes clignote3 {
+  0% {
+    opacity: 0.3; }
+  70% {
+    opacity: 0.3; }
+  80% {
+    opacity: 0.7; }
+  90% {
+    opacity: 1; }
+  100% {
+    opacity: 0.3; } }
+
+#menu1 .menu,
+#menu2 .menu,
+#menu3 .menu,
+#menu4 .menu {
+  overflow: hidden;
+  position: relative; }
+  #menu1 .menu *,
+  #menu2 .menu *,
+  #menu3 .menu *,
+  #menu4 .menu * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    opacity: 1; }
+  #menu1 .menu .menu,
+  #menu2 .menu .menu,
+  #menu3 .menu .menu,
+  #menu4 .menu .menu {
+    max-width: 100%;
+    transition: all 2s; }
+
+#menu1:hover *,
+#menu2:hover *,
+#menu3:hover *,
+#menu4:hover * {
+  opacity: 0.8; }
+
+#menu1:hover .menu,
+#menu2:hover .menu,
+#menu3:hover .menu,
+#menu4:hover .menu {
+  transform: scale(1.8);
+  transition: all 2s; }
+
+#prochain {
+  margin: 0; }
+
+#appetit .nom_menu {
+  color: #c67513; }
+
+#appetit ul {
+  color: #c67513; }
+
+#plaisir_papilles .nom_menu {
+  color: #a56799; }
+
+#plaisir_papilles ul {
+  color: #a56799; }
+
+#gourmandises .nom_menu {
+  color: #6e4ccc; }
+
+#gourmandises ul {
+  color: #6e4ccc; }
+
+#point1 {
+  font-size: 10px;
+  opacity: 1;
+  -webkit-animation: clignote1 2s infinite;
+  animation: clignote1 2s infinite; }
+
+#point2 {
+  font-size: 10px;
+  opacity: 1;
+  -webkit-animation: clignote2 2s infinite;
+  animation: clignote2 2s infinite; }
+
+#point3 {
+  font-size: 10px;
+  opacity: 1;
+  -webkit-animation: clignote3 2s infinite;
+  animation: clignote3 2s infinite; }
+
+#menu_1 span,
+#menu_2 #color_title_appetit,
+#menu_2 #color_title_plaisir,
+#menu_2 #color_title_gourmandise,
+#menu_3 #color_title_commencer,
+#menu_3 #color_title_continuer,
+#menu_3 #color_title_terminer,
+#menu_4 span {
+  display: inline-block; }
+
+#menu_1 span:before {
+  content: "";
+  display: block;
+  height: 0.06em;
+  width: 0%;
+  margin-bottom: -21px;
+  transition: width 0.5s;
+  background-color: #3c1218; }
+
+#menu_2 #color_title_appetit:before {
+  content: "";
+  display: block;
+  height: 0.06em;
+  width: 0%;
+  margin-bottom: -21px;
+  transition: width 0.5s;
+  background-color: #c67513; }
+
+#menu_2 #color_title_plaisir:before {
+  content: "";
+  display: block;
+  height: 0.06em;
+  width: 0%;
+  margin-bottom: -21px;
+  transition: width 0.5s;
+  background-color: #a56799; }
+
+#menu_2 #color_title_gourmandise:before {
+  content: "";
+  display: block;
+  height: 0.06em;
+  width: 0%;
+  margin-bottom: -21px;
+  transition: width 0.5s;
+  background-color: #6e4ccc; }
+
+#menu_3 #color_title_commencer:before {
+  content: "";
+  display: block;
+  height: 0.06em;
+  width: 0%;
+  margin-bottom: -21px;
+  transition: width 0.5s;
+  background-color: #0228dd; }
+
+#menu_3 #color_title_continuer:before {
+  content: "";
+  display: block;
+  height: 0.06em;
+  width: 0%;
+  margin-bottom: -21px;
+  transition: width 0.5s;
+  background-color: #0670f3; }
+
+#menu_3 #color_title_terminer:before {
+  content: "";
+  display: block;
+  height: 0.06em;
+  width: 0%;
+  margin-bottom: -21px;
+  transition: width 0.5s;
+  background-color: #229df9; }
+
+#menu_4 span:before {
+  content: "";
+  display: block;
+  height: 0.06em;
+  width: 0%;
+  margin-bottom: -21px;
+  transition: width 0.5s;
+  background-color: #3e923a; }
+
+#menu_1 span:hover:before,
+#menu_2 #color_title_appetit:hover:before,
+#menu_2 #color_title_plaisir:hover:before,
+#menu_2 #color_title_gourmandise:hover:before,
+#menu_3 #color_title_commencer:hover:before,
+#menu_3 #color_title_continuer:hover:before,
+#menu_3 #color_title_terminer:hover:before,
+#menu_4 span:hover:before {
+  width: 100%; }
+
+body {
+  height: 100%;
+  margin: 0; }
+
+header {
+  width: 100%;
+  background: #579c87;
+  height: auto;
+  padding-bottom: 1px;
+  padding-top: 1px; }
+
+h1 {
+  text-align: center;
+  font-family: sans-serif;
+  font-size: 60px;
+  color: #f1c849; }
+
+.body_menus h2 {
+  text-align: center;
+  font-family: sans-serif;
+  padding-top: 50px;
+  font-size: 40px;
+  margin-bottom: 15px; }
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 45px;
+  background-color: #579c87;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%; }
+
+.mentions_contact a {
+  font-family: sans-serif;
+  font-size: 25px;
+  color: #f1c849;
+  text-decoration: none;
+  margin-right: 30px;
+  margin-left: 30px;
+  transition: transform 2s;
+  display: inline-block; }
+
+#contact a:hover,
+#mentions a:hover {
+  -webkit-animation-name: shake;
+  animation-name: shake;
+  -webkit-animation-duration: 0.8s;
+  animation-duration: 0.8s;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite; }
+
+#next {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  margin-bottom: 60px;
+  margin-top: 60px; }
+  #next button {
+    background-color: #579c87;
+    border: none;
+    color: #f1c849;
+    text-align: center;
+    text-decoration: none;
+    font-size: 30px;
+    margin-bottom: 60px;
+    border-radius: 12px;
+    padding: 25px 90px; }
+    #next button .points {
+      font-size: 10px;
+      padding-left: 5px;
+      color: #f1c849;
+      opacity: 1; }
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  max-width: 1100px;
+  margin: 0 auto; }
+
+#menu1 {
+  background-color: #fcdfdb;
+  display: flex;
+  width: 450px;
+  height: 650px;
+  margin: 50px;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 1px 1px 12px #555; }
+
+#menu2 {
+  background-color: #fff5fe;
+  display: flex;
+  width: 450px;
+  height: 650px;
+  margin: 50px;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 1px 1px 12px #555; }
+
+#menu3 {
+  background-color: #fbfbfb;
+  display: flex;
+  width: 450px;
+  height: 650px;
+  margin: 50px;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 1px 1px 12px #555; }
+
+#menu4 {
+  background-color: #ffffff;
+  display: flex;
+  width: 450px;
+  height: 650px;
+  margin: 50px;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 1px 1px 12px #555; }
+
+.fa-itunes-note {
+  font-size: 50px;
+  color: #3c1218; }
+
+#note1,
+#note2,
+#note3 {
+  background: -webkit-linear-gradient(155deg, #f6916a, #f05160);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent; }
+
+#note2 {
+  font-size: 120px; }
+
+#note3 {
+  font-size: 40px;
+  padding-top: 35px;
+  padding-right: 15px; }
+
+#title_end {
+  display: flex;
+  margin: 0 auto;
+  justify-content: center; }
+
+#title_end_menu1 {
+  font-family: "Devonshire", cursive;
+  font-weight: 100;
+  font-size: 35px;
+  color: #3c1218; }
+
+#title1_menu1 {
+  font-family: "Devonshire", cursive;
+  color: #3c1218;
+  font-size: 35px; }
+
+#title2_menu1 {
+  font-family: "Kalam", cursive;
+  color: #3c1218;
+  font-size: 40px; }
+
+#title1_menu2 {
+  font-family: "Croissant One", cursive;
+  background: -webkit-linear-gradient(155deg, #6e4ccc, #a56799, #c67513);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 20px; }
+
+#title2_menu2 {
+  font-family: "Croissant One", cursive;
+  font-size: 40px;
+  color: #c67513; }
+
+#title1_menu3 {
+  font-family: "Dancing Script", cursive;
+  font-size: 30px;
+  background: -webkit-linear-gradient(155deg, #0889fb, #0023db);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent; }
+
+#title2_menu3 {
+  font-family: "Kalam", cursive;
+  color: #0887fb;
+  font-size: 40px; }
+
+#title1_menu4 {
+  font-family: "Kaushan Script", cursive;
+  font-size: 30px;
+  background: -webkit-linear-gradient(155deg, #beff7f, #3e923a);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent; }
+
+#title2_menu4 {
+  color: #72bf56;
+  font-family: "Kalam", cursive;
+  font-size: 40px; }
+
+.menu {
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  width: 450px;
+  height: 650px;
+  display: flex;
+  flex-direction: column;
+  text-decoration: none; }
+
+.title_first_page {
+  justify-content: center;
+  align-items: center; }
+
+.body_menus {
+  display: contents; }
+  .body_menus .page_menu {
+    text-align: center;
+    width: 700px;
+    margin: 0 auto;
+    padding-bottom: 35px;
+    padding-top: 35px;
+    margin-bottom: 100px; }
+
+#menu_1 {
+  background-color: #fcdfdb; }
+
+#menu_1 h4,
+#menu_2 h4,
+#menu_3 h4 {
+  padding: 1em 0;
+  text-align: center;
+  overflow: hidden;
+  margin-left: 45px;
+  margin-right: 45px; }
+
+#menu_1 h4:before,
+#menu_1 h4:after,
+#menu_2 h4:before,
+#menu_2 h4:after,
+#menu_3 h4:before,
+#menu_3 h4:after {
+  content: "";
+  width: 100%;
+  display: inline-block;
+  vertical-align: middle; }
+
+#menu_1 #color_prelude:before,
+#menu_1 #color_prelude:after,
+#menu_1 #color_orgue:before,
+#menu_1 #color_orgue:after,
+#menu_1 #color_final:before,
+#menu_1 #color_final:after,
+#menu_2 #color_prelude:before,
+#menu_2 #color_prelude:after,
+#menu_2 #color_orgue:before,
+#menu_2 #color_orgue:after,
+#menu_2 #color_final:before,
+#menu_2 #color_final:after,
+#menu_3 #color_prelude:before,
+#menu_3 #color_prelude:after,
+#menu_3 #color_orgue:before,
+#menu_3 #color_orgue:after,
+#menu_3 #color_final:before,
+#menu_3 #color_final:after {
+  content: "";
+  width: 100%;
+  display: inline-block;
+  vertical-align: middle;
+  border-bottom: #3c1218 solid; }
+
+#menu_1 #color_appetit:before,
+#menu_1 #color_appetit:after,
+#menu_2 #color_appetit:before,
+#menu_2 #color_appetit:after,
+#menu_3 #color_appetit:before,
+#menu_3 #color_appetit:after {
+  content: "";
+  width: 100%;
+  display: inline-block;
+  vertical-align: middle;
+  border-bottom: #c67513 solid; }
+
+#menu_1 #color_plaisir:before,
+#menu_1 #color_plaisir:after,
+#menu_2 #color_plaisir:before,
+#menu_2 #color_plaisir:after,
+#menu_3 #color_plaisir:before,
+#menu_3 #color_plaisir:after {
+  content: "";
+  width: 100%;
+  display: inline-block;
+  vertical-align: middle;
+  border-bottom: #a56799 solid; }
+
+#menu_1 #color_gourmandise:before,
+#menu_1 #color_gourmandise:after,
+#menu_2 #color_gourmandise:before,
+#menu_2 #color_gourmandise:after,
+#menu_3 #color_gourmandise:before,
+#menu_3 #color_gourmandise:after {
+  content: "";
+  width: 100%;
+  display: inline-block;
+  vertical-align: middle;
+  border-bottom: #6e4ccc solid; }
+
+#menu_1 #color_commencer:before,
+#menu_1 #color_commencer:after,
+#menu_2 #color_commencer:before,
+#menu_2 #color_commencer:after,
+#menu_3 #color_commencer:before,
+#menu_3 #color_commencer:after {
+  content: "";
+  width: 100%;
+  display: inline-block;
+  vertical-align: middle;
+  border-bottom: #0228dd solid; }
+
+#menu_1 #color_continuer:before,
+#menu_1 #color_continuer:after,
+#menu_2 #color_continuer:before,
+#menu_2 #color_continuer:after,
+#menu_3 #color_continuer:before,
+#menu_3 #color_continuer:after {
+  content: "";
+  width: 100%;
+  display: inline-block;
+  vertical-align: middle;
+  border-bottom: #0670f3 solid; }
+
+#menu_1 #color_terminer:before,
+#menu_1 #color_terminer:after,
+#menu_2 #color_terminer:before,
+#menu_2 #color_terminer:after,
+#menu_3 #color_terminer:before,
+#menu_3 #color_terminer:after {
+  content: "";
+  width: 100%;
+  display: inline-block;
+  vertical-align: middle;
+  border-bottom: #229df9 solid; }
+
+#menu_1 h4:before,
+#menu_2 h4:before,
+#menu_3 h4:before {
+  margin-left: -100%;
+  margin-right: 10px; }
+
+#menu_1 h4:after,
+#menu_2 h4:after,
+#menu_3 h4:after {
+  margin-right: -100%;
+  margin-left: 10px; }
+
+#menu_4 h4 {
+  padding: 1em 0;
+  text-align: center;
+  overflow: hidden;
+  margin-left: 45px;
+  margin-right: 45px; }
+
+#menu_4 h4::before,
+#menu_4 h4::after {
+  content: "";
+  width: 100%;
+  display: inline-block;
+  vertical-align: middle;
+  height: 5px;
+  background-image: -webkit-linear-gradient(155deg, #beff7f, #3e923a, #3e923a, #beff7f); }
+
+#menu_4 h4::before {
+  margin-left: -100%;
+  margin-right: 40px; }
+
+#menu_4 h4::after {
+  margin-right: -100%;
+  margin-left: 40px; }
+
+.content_menu_content {
+  display: flex;
+  flex-direction: column;
+  margin-left: 70px;
+  margin-right: 70px; }
+  .content_menu_content .plats_prix {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; }
+
+#title_menu1 {
+  font-family: "Devonshire", cursive;
+  font-weight: 100;
+  font-size: 65px;
+  color: #3c1218;
+  margin-top: 10px;
+  margin-bottom: 15px; }
+
+#title_menu2 {
+  font-size: 50px;
+  background: -webkit-linear-gradient(155deg, #6e4ccc, #a56799, #c67513);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent; }
+
+#title_menu3 {
+  font-family: "Dancing Script", cursive;
+  font-size: 60px;
+  background: -webkit-linear-gradient(155deg, #0889fb, #0023db);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent; }
+
+#title_menu4 {
+  font-family: "Kaushan Script", cursive;
+  font-size: 65px;
+  background: -webkit-linear-gradient(155deg, #beff7f, #3e923a);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent; }
+
+#menu_2 .content_menu_content {
+  font-family: "Roboto Slab", serif; }
+
+#menu_2 .nom_menu {
+  font-size: 20px; }
+
+#menu_1 .menu_content,
+#menu_3 .menu_content,
+#menu_4 .menu_content {
+  font-family: "Shadow into light", cursive; }
+
+@media only screen and (max-width: 1024px) {
+  #corp_de_page {
+    display: flex;
+    flex-direction: column;
+    width: fit-content; }
+  #la_note_enchantee,
+  #le_chic_a_la_française,
+  #le_delice_des_papilles,
+  #la_palette_du_gout {
+    width: fit-content;
+    margin: 0; }
+  html .body_menus {
+    width: fit-content; } }
+
+@media only screen and (max-width: 768px) {
+  .body_menus .page_menu {
+    width: auto; }
+  .plats_prix {
+    align-items: center;
+    padding: 10px 0; }
+  .prix {
+    padding-left: 10px; } }
+
+@media only screen and (max-width: 425px) {
+  .mentions_contact {
+    font-size: 25px; }
+  html .body_menus {
+    display: block; }
+  #menu_2 .nom_menu {
+    font-size: 19px; } }
