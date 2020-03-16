@@ -1,4 +1,40 @@
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 425px) {
+  html .body_menus {
+    display: block;
+  }
+  #menu_2 .nom_menu {
+    font-size: 19px;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .body_menus .page_menu{
+    width: auto;
+  }
+  .mentions_contact a {
+    margin-right: 20px;
+    margin-left: 20px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  html body #corp_de_page {
+    display: contents;
+  }
+  .body_menus .page_menu{
+    width: auto;
+  }
+  .content_menu_content .plats_prix{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 0;
+  }
+  .prix {
+    margin-top: 4px;
+  }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
   #corp_de_page {
     display: flex;
     flex-direction: column;
@@ -14,29 +50,4 @@
   html .body_menus {
     width: fit-content;
   }
-}
-
-@media only screen and (max-width: 768px) {
-  .body_menus .page_menu{
-    width: auto;
-  }
-  .plats_prix{
-    align-items: center;
-    padding: 10px 0;
-  }
-  .prix{
-    padding-left: 10px;
-  }
-}
-
-@media only screen and (max-width: 425px) {
-  .mentions_contact {
-    font-size: 25px;
-  }
-  html .body_menus {
-    display: block;
-  }
-  #menu_2 .nom_menu {
-    font-size: 19px;
-}
 }
