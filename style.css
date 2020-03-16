@@ -742,9 +742,7 @@ main {
   html .body_menus {
     display: block; }
   #menu_2 .nom_menu {
-    font-size: 19px;
-    margin-left: 0;
-    margin-right: 0; }
+    font-size: 19px; }
   .body_menus .page_menu {
     width: auto; }
   .mentions_contact a {
