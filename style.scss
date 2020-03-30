@@ -144,40 +144,40 @@ main {
 #title2_menu1 {
   font-family: "Kalam", cursive;
   color: $font-color_menu_1;
-  font-size: 40px;
+  font-size: 30px;
 }
 #title1_menu2 {
   font-family: "Croissant One", cursive;
   background: $gradient_menu_2;
   @include background_kit;
-  font-size: 20px;
+  font-size: 17px;
 }
 #title2_menu2 {
   font-family: "Croissant One", cursive;
-  font-size: 40px;
+  font-size: 35px;
   color: $font-color_title2_menu2;
 }
 #title1_menu3 {
   font-family: "Dancing Script", cursive;
-  font-size: 30px;
+  font-size: 26px;
   background: $gradient_menu_3;
   @include background_kit;
 }
 #title2_menu3 {
   font-family: "Kalam", cursive;
   color: $font-color_title2_menu3;
-  font-size: 40px;
+  font-size: 36px;
 }
 #title1_menu4 {
   font-family: "Kaushan Script", cursive;
-  font-size: 30px;
+  font-size: 21px;
   background: $gradient_menu_4;
   @include background_kit;
 }
 #title2_menu4 {
   color: $font-color_title2_menu4;
   font-family: "Kalam", cursive;
-  font-size: 40px;
+  font-size: 35px;
 }
 .menu {
   text-align: center;
