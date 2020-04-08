@@ -33,7 +33,6 @@
 /* couleur police dessert */
 /* couleur police du titre "menu" du menu la palette du goût*/
 /* une des couleur du dégradé et du soulignement du menu la palette du goût*/
-@import url(google-fonts.css);
 @keyframes shake {
   0% {
     -webkit-transform: translate(2px, 2px); }
@@ -770,7 +769,7 @@ main {
     flex-direction: column;
     width: fit-content; }
   #la_note_enchantee,
-  #le_chic_a_la_française,
+  #le_chic_a_la_francaise,
   #le_delice_des_papilles,
   #la_palette_du_gout {
     width: fit-content;
