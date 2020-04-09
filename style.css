@@ -313,6 +313,8 @@ header {
   height: auto;
   padding-bottom: 1px;
   padding-top: 1px; }
+  header a {
+    text-decoration: none; }
 
 h1 {
   text-align: center;
